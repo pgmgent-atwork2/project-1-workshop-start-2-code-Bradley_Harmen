@@ -1,0 +1,28 @@
+
+body{
+    background-color: lightblue;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100vw;
+}
+
+.game_img img{
+    margin-top: 5rem;
+    width: 60rem; 
+}
+
+.content {
+    max-width: 60rem;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.css{
+    display: flex;
+}
+
+.html img{
+    width: 60rem;
+}

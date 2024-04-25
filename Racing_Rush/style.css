@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #3CCE18;
+}
+
+header img{
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+.road {
+    padding-top: 6rem;
+    width: 650px;
+    height: 100vh;
+    background-image: url('./img/map2.1.png');
+    animation: moveRoad 2s linear infinite;
+    background-repeat: repeat-y;
+    background-position: 0%;
+    margin: 0 35%;
+    z-index: 3;
+    
+}
+.road::after {
+    content: '';
+    background-image: url("./img/trees.png");
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    animation: moveRoad 2s linear infinite;
+    left: 31.3rem;
+    top: 5rem;
+}
+.road::before {
+    content: '';
+    background-image: url("./img/trees.png");
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    animation: moveRoad 2s linear infinite;
+    left: 62rem;
+    top: 5rem;
+}
+
+.hero {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 400px;
+    left: 100px;
+    background-image: url(./img/hero.png);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+.villian {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-image: url(./img/villian.png);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    animation: blockHero 1s linear infinite;
+}
+
+.score {
+    top: 20rem;
+    right: 5rem;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    z-index: 3;
+    font-size: 3rem;
+    min-width: 12.9rem;
+    color: white;
+    border: 2px solid black ;
+    border-radius: 5%;
+    padding: 0.5rem;
+}
+
+.pole {
+    width: 10px;
+    height: 60rem;
+    background-color: black;
+    position: absolute;
+    top: 24.4rem;
+    left: 94.2rem;
+    z-index: 3;
+}
+
+@keyframes blockHero {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 700px;
+    }
+}
+
+@keyframes moveRoad {
+    0% {
+        background-position-y: 0px;
+    }
+    100% {
+        background-position-y: 550px
+    }
+}
+
+.link{
+    z-index: 5;
+}
