@@ -26,3 +26,20 @@ body{
 .html img{
     width: 60rem;
 }
+
+.link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border: 2px solid rgb(194, 192, 192);
+   
+   
+}
+ 
